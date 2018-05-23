@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/Chad/Documents/ARcircle/build/Debug-iphoneos/ARCL/ARCL.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/Chad/Documents/ARcircle/build/Pods.build/Debug-iphoneos/ARCL.build/unextended-module.modulemap',
+    }]
+  }]
+}

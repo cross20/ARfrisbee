@@ -1,0 +1,6 @@
+framework module Pods_ARcircle {
+  umbrella header "Pods-ARcircle-umbrella.h"
+
+  export *
+  module * { export * }
+}
