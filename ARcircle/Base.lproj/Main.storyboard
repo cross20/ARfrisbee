@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Augmented Map-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ARcircle" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Augmented Map" id="BYZ-38-t0r" customClass="ViewController" customModule="ARcircle" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -38,7 +38,7 @@
                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="9Qy-Kg-3AG" kind="show" id="nl5-Mh-CZd"/>
+                                            <segue destination="9Qy-Kg-3AG" kind="show" id="buX-wL-9M7"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -70,10 +70,60 @@
             </objects>
             <point key="canvasLocation" x="1079.2" y="132.26600985221674"/>
         </scene>
-        <!--Map View Controller-->
+        <!--Item 2-->
+        <scene sceneID="9M6-07-GHr">
+            <objects>
+                <viewController id="vQh-Hp-d4u" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1vf-bh-Fic">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Nwf-oe-T3v"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="jvy-fF-oy5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CJw-f0-vHz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="164" y="460"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="cNC-JK-vcA">
+            <objects>
+                <viewController id="e4I-ZJ-jTa" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MuG-ol-08G">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Gdf-1v-Raf"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="FN9-UN-c20"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JeC-YZ-YfA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="164" y="-196"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Fd1-Zy-9iz">
+            <objects>
+                <tabBarController id="IRg-Hq-NA0" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="x9s-nf-zbG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="e4I-ZJ-jTa" kind="relationship" relationship="viewControllers" id="BIR-NE-18T"/>
+                        <segue destination="vQh-Hp-d4u" kind="relationship" relationship="viewControllers" id="slL-we-tER"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MQO-jU-lfC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-790" y="132"/>
+        </scene>
+        <!--Standard Map-->
         <scene sceneID="yBP-s1-s5X">
             <objects>
-                <viewController id="9Qy-Kg-3AG" customClass="MapViewController" customModule="ARcircle" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Standard Map" id="9Qy-Kg-3AG" customClass="MapViewController" customModule="ARcircle" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ngL-pb-c8U">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -98,7 +148,7 @@
                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="show" id="1b1-EA-iKy"/>
+                                            <segue destination="syd-RC-33S" kind="unwind" identifier="backButton" unwindAction="unwindSegue:" id="IuD-wS-ToP"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -130,6 +180,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aV3-kz-n5x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="syd-RC-33S" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1884" y="132.26600985221674"/>
         </scene>

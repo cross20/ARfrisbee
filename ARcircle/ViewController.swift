@@ -35,9 +35,9 @@ class ViewController: UIViewController {
         
         sceneLocationView.run()
         
-        //Code for DEMO course @ Whitworth
-        //TO-DO: Reduce the number of lines that this code requires
+        //TO-DO: Move this information into a database
         //TO-DO: Make this code more flexible so that it will work with different frisbee courses.
+        //TO-DO: Fix issue that causes view controllers to stack on top of each other.
         
         //let robinson = CLLocationCoordinate2D(latitude: 47.7541636, longitude: -117.4170061) //Robinson
         let ej = CLLocationCoordinate2D(latitude: 47.7540256, longitude: -117.4162068) //Eric Johnston
@@ -138,6 +138,10 @@ class ViewController: UIViewController {
         view.bringSubview(toFront: mapButton)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        sceneLocationView.run();
+    }
+    
     override func viewDidDisappear(_ animated: Bool) {
         sceneLocationView.pause();
     }
@@ -155,13 +159,10 @@ class ViewController: UIViewController {
     
     @objc func buttonAction(sender: UIButton!) {
         print("Button tapped")
-        sceneLocationView.pause()
     }
     
     @IBAction func unwindSegue(_ sender: UIStoryboardSegue) {
-        print("Unwinding")
+        //Don't need anything here
     }
-
-
 }
 
